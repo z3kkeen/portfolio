@@ -249,6 +249,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 a:visited {
     color: #9e8441;
 }
