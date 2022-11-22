@@ -236,6 +236,7 @@ h2 {
     margin-top: 25%;
     margin-left: 10%;
     font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
     color: #9e8441;
     display: flex;
     align-items: center;
@@ -260,6 +261,7 @@ a:visited {
 .mail {
     margin-left: 10%;
     font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
     color: #9e8441;
     display: flex;
     align-items: center;
@@ -272,6 +274,7 @@ a:visited {
 .dms {
     margin-left: 10%;
     font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
     color: #9e8441;
     display: flex;
     align-items: center;
@@ -284,6 +287,7 @@ a:visited {
 .language {
     margin-left: 10%;
     font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
     color: #9e8441;color: #9e8441;
     display: flex;
     align-items: center;
