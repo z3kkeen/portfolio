@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+
+
+h1 {
+    font-size: 8rem;
+    margin-left: 2vw;
+    color: #C19F7E;
+    -webkit-text-stroke: 2px #8E5521;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+h2 {
+    font-size: 5rem;
+    color: #E7CA82;
+    -webkit-text-stroke: 2px #AB8F48;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.squiggle {
+    font-weight: initial;
+    margin-right: 10px;
+}
+
+.intro {
+    height: 100vh;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.intro img {
+    width: 400px;
+    margin-top: -10vh;
+}
+
+.intro p {
+    height: 20vh;
+    font-size: 2rem;
+    color: #C19F7E;
+    margin-left: 20%;
+    letter-spacing: 8px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.break {
+    width: 60vw;
+    height: 4px;
+    background-color: #8E5521;
+    margin-top: 40vh;
+}
+
+.projects {
+    height: 100px;
+    width: auto;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-1 {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    margin-top: 8vh;
+    margin-left: -25vw;
+}
+
+.main-1 img {
+    width: 300px;
+    border: 6px solid #E7CA82;
+}
+
+#bingo {
+    margin-left: 2vw;
+    font-size: 3rem;
+    border-bottom: 4px dotted #8E5521;
+    color: #C19F7E;
+    -webkit-text-stroke: 2px #8E5521;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-1 li {
+    font-size: 1.8rem;
+    margin-bottom: 1.5vh;
+    color: #8E5521;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-2 {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    margin-top: 8vh;
+    margin-left: -25vw;
+}
+
+.main-2 img {
+    width: 400px;
+    border: 6px solid #E7CA82;
+}
+
+#chat {
+    margin-left: 2vw;
+    font-size: 3rem;
+    border-bottom: 4px dotted #8E5521;
+    color: #C19F7E;
+    -webkit-text-stroke: 2px #8E5521;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-2 li {
+    font-size: 1.8rem;
+    margin-bottom: 1.5vh;
+    color: #8E5521;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-3 {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    margin-top: 8vh;
+    margin-left: -25vw;
+}
+
+.main-3 img {
+    width: 500px;
+    border: 6px solid #E7CA82;
+}
+
+#timer {
+    margin-left: 2vw;
+    font-size: 3rem;
+    border-bottom: 4px dotted #8E5521;
+    color: #C19F7E;
+    -webkit-text-stroke: 2px #8E5521;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-3 li {
+    font-size: 1.8rem;
+    margin-bottom: 1.5vh;
+    color: #8E5521;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-4 {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    margin-top: 8vh;
+    margin-left: -25vw;
+}
+
+.main-4 img {
+    width: 300px;
+    border: 6px solid #E7CA82;
+}
+
+#calc {
+    margin-left: 2vw;
+    font-size: 3rem;
+    border-bottom: 4px dotted #8E5521;
+    color: #C19F7E;
+    -webkit-text-stroke: 2px #8E5521;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-4 li {
+    font-size: 1.8rem;
+    margin-bottom: 1.5vh;
+    color: #8E5521;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#note {
+    font-size: 3.7rem;
+    color: #E7CA82;
+    -webkit-text-stroke: 2px #AB8F48;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.note-break {
+    width: 60vw;
+    height: 4px;
+    background-color: #8E5521;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-left: -49vh;
+}
+
+#genshin-wikizek {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 1vh;
+    font-size: 3rem;
+    color: #ad7ec1;
+    -webkit-text-stroke: 2px #8d5da1;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#u-project {
+    margin-left: -10vh;
+}
+
+.main-g img {
+    width: 70vh;
+    margin-left: -18vh;
+    margin-bottom: 10vh;
+}
+
+.sidebar {
+    background-color: #E7CA82;
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0%;
+}
+
+.github {
+    margin-top: 25%;
+    margin-left: 10%;
+    font-size: 30px;
+    color: #9e8441;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9e8441;
+}
+
+.mail {
+    margin-left: 10%;
+    font-size: 30px;
+    color: #9e8441;
+    display: flex;
+    align-items: center;
+}
+
+.dms {
+    margin-left: 10%;
+    font-size: 30px;
+    color: #9e8441;
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    margin-left: 10%;
+    font-size: 30px;
+    color: #9e8441;color: #9e8441;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    margin-left: 80px;
+    margin-top: 10px; 
+}
+
