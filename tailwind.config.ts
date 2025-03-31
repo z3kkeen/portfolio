@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        rocker: ['var(--rocker)'],
+        pixelFont: ['var(--pixel-font)'],
+      }
     },
   },
   plugins: [],

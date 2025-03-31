@@ -14,8 +14,73 @@
   }
 }
 
+@layer base {
+  .font-outline-2 {
+    color: white;
+    background: radial-gradient(#ffbe69ca, #546c7b);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 7px transparent;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+ul,
+span,
+#my-names {
+  font-family: var(--rocker);
+}
+
+h2,
+header a {
+  font-family: var(--pixel-font);
+}
+
+#line {
+  height: 3px;
+  width: 40%;
+  margin-left: 4em;
+}
+
+.b {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(110, 136, 152, 1) 80%,
+    rgba(110, 136, 152, 0) 100%
+  );
+}
+
+.y {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(220, 178, 124, 1) 80%,
+    rgba(220, 178, 124, 1) 100%
+  );
+}
+
+.p {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(121, 132, 190, 1) 80%,
+    rgba(121, 132, 190, 1) 100%
+  );
 }

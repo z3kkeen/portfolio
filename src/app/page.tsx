@@ -1,101 +1,117 @@
+"use client";
+import React from "react";
 import Image from "next/image";
+import pfp from "/public/imgs/pfp.jpg";
+import { RotateWords } from "@/components/rotate-words";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div
+      id="body"
+      className="h-full w-full flex items-center flex-col bg-[#393433] overflow-hidden"
+    >
+      <header className="w-full h-12 z-20 bg-[#262626] flex fixed justify-center items-center ">
+        <a href="#home" className="z-10">
+          HOME
+        </a>
+        <span className="w-10 h-10 bg-[url('/icons/home.png')] bg-cover ml-[-1.5em]"></span>
+        <div className="w-0.5 h-6 bg-[#5C4F4F] mx-4"></div>
+        <a href="#about" className="z-10">
+          ABOUT
+        </a>
+        <span className="w-8 h-8 bg-[url('/icons/info.png')] bg-cover ml-[-1em]"></span>
+        <div className="w-0.5 h-6 bg-[#5C4F4F] mx-4"></div>
+        <a href="#stats" className="z-10">
+          STATS
+        </a>
+        <span className="w-10 h-10 bg-[url('/icons/stats.png')] bg-cover ml-[-1.5em]"></span>
+        <div className="w-0.5 h-6 bg-[#5C4F4F] mx-4"></div>
+        <a href="#find-me" className="z-10">
+          FIND ME
+        </a>
+        <span className="w-10 h-10 bg-[url('/icons/contact-mail.png')] bg-cover ml-[-1.5em]"></span>
+      </header>
+      <section id="home" className="flex h-screen w-full justify-center pt-48">
+        <span className="flex h-screen justify-center items-start gap-6">
+          <Image
+            src={pfp}
+            alt="pfp"
+            width={140}
+            height={140}
+            className="rounded-full border-2 border-[#FFBF69]"
+          />
+          <div className="flex flex-col gap-2">
+            <h1 className="text-8xl pl-3 tracking-widest [text-shadow:_0_5px_0_rgb(255_191_105_/_60%)]">
+              ZEKKEN
+            </h1>
+            <h2 className="text-2xl pl-2 font-outline-2">Alex Henricson</h2>
+          </div>
+          <div className="flex flex-col gap-3">
+            <div id="color-square" className="bg-[#FFBF69] h-10 w-10"></div>
+            <div id="color-square" className="bg-[#6E8898] h-10 w-10"></div>
+            <div id="color-square" className="bg-[#CFA5B4] h-10 w-10"></div>
+          </div>
+        </span>
+        <div
+          id="wave-divider"
+          className="h-full w-full z-10 bg-[url('/imgs/waves.png')] bg-contain bg-no-repeat mt-[15em] absolute"
+        ></div>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section id="about" className="px-10 h-screen w-full flex flex-col gap-5">
+        <RotateWords />
+        <div className="bg-[#4E7E80] ">
+          <h2 className="text-[#AFCCCD]">Hello!</h2>
+          <div className="bg-[#98B8B9] text-[#214649]">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium beatae laborum consequuntur soluta iure adipisci, et
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div id="line" className="y"></div>
+        <div className="bg-[#BF9257]">
+          <h2 id="find-me" className="text-[#F9DDB8]">
+            Reach out!
+          </h2>
+          <div className="bg-[#D2AB78] text-[#7B5829]">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, consequuntur. Vitae consequuntur at fugit ipsam,{" "}
+            </p>
+          </div>
+        </div>
+        <div id="line" className="p"></div>
+        <span className="flex gap-8">
+          <div>
+            <div className="flex flex-col gap-3">
+              <div id="color-square" className="bg-[#FFBF69] h-10 w-10"></div>
+              <div id="color-square" className="bg-[#6E8898] h-10 w-10"></div>
+              <div id="color-square" className="bg-[#CFA5B4] h-10 w-10"></div>
+            </div>
+          </div>
+          <div className="bg-[#5B6288]">
+            <h2 className="text-[#D8DBF4]">Previous Projects</h2>
+            <div className="bg-[#A0A5C2] text-[#494f72]">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </div>
+          </div>
+        </span>
+      </section>
+      <div
+        id="wave-divider"
+        className="h-96 w-full bg-[url('/imgs/waves.png')] bg-cover bg-no-repeat mt-[-20em] rotate-180"
+      ></div>
+      <section
+        id="stats"
+        className="h-screen w-full flex flex-col items-center pt-10"
+      >
+        <h1 className="text-8xl">STATS</h1>
+      </section>
+      <div
+        id="wave-divider"
+        className="h-96 w-full bg-[url('/imgs/waves.png')] bg-cover bg-no-repeat mt-[-20em] opacity-60 mb-[-10em]"
+      ></div>
     </div>
   );
 }
