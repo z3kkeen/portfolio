@@ -33,7 +33,7 @@ export function RotateWords() {
           </motion.p>
         </AnimatePresence>
       </div>
-      <div id="line" className="b"></div>
+      <div id="line" className="b1"></div>
     </div>
   );
 }

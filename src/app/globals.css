@@ -55,13 +55,22 @@ header a {
   margin-left: 4em;
 }
 
-.b {
+.b1 {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(110, 136, 152, 1) 80%,
     rgba(110, 136, 152, 0) 100%
+  );
+}
+
+.b2 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(110, 136, 152, 2) 100%
   );
 }
 

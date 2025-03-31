@@ -106,7 +106,9 @@ export default function Home() {
         id="stats"
         className="h-screen w-full flex flex-col items-center pt-10"
       >
+        <div id="line" className="b2"></div>
         <h1 className="text-8xl">STATS</h1>
+        <div id="line" className="b2"></div>
       </section>
       <div
         id="wave-divider"
