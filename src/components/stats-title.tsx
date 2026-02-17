@@ -3,16 +3,23 @@ import React from "react";
 
 export default function StatsTitle() {
   return (
-    <div className="h-full w-[70%] flex flex-col">
-      <div id="line" className="b2 ml-[30%] "></div>
-      <span className="flex gap-4 bg-[#747170]">
-        <div className="clipped h-full"></div>
-        <span className="flex ">
-          <h1 className="text-8xl text-center">STATS</h1>
-        </span>
-        <div className="clipped h-full rotate-180"></div>
+    <div className="h-[25%] w-[75%] flex flex-col justify-center text-white">
+      <span className="flex items-center justify-end">
+        <div className="diamond w-6 h-6 bg-[#6E8898] "></div>
+        <div id="line" className="b2 ml-[-10px]"></div>
+        <div className="diamond w-6 h-6 bg-white ml-[-10px] mr-[-10px]"></div>
       </span>
-      <div id="line" className="b2 rotate-180"></div>
+      <span
+        id="title-container"
+        className="h-[80%] w-full flex items-center justify-center my-1"
+      >
+        <h1 className="text-8xl text-center">STATS</h1>
+      </span>
+      <span className="flex items-center">
+        <div className="diamond w-6 h-6 bg-white ml-[-10px]"></div>
+        <div id="line" className="b2 rotate-180 ml-[-10px]"></div>
+        <div className="diamond w-6 h-6 bg-[#6E8898] ml-[-10px]"></div>
+      </span>
     </div>
   );
 }

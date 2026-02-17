@@ -6,7 +6,7 @@ import Wave from "./wave";
 
 export default function Introduction() {
   return (
-    <div className="h-screen w-full mt-60 flex flex-col justify-center items-center">
+    <div className="h-screen w-full mt-20 flex flex-col justify-center items-center">
       <section
         id="home"
         className="flex h-full justify-center items-center pt-32"
@@ -20,7 +20,7 @@ export default function Introduction() {
         />
 
         <div className="flex flex-col gap-2">
-          <h1 className="text-8xl pl-3 tracking-widest [text-shadow:_0_5px_0_rgb(255_191_105_/_60%)]">
+          <h1 className="text-8xl pl-3 tracking-widest text-white [text-shadow:_0_5px_0_rgb(255_191_105_/_60%)]">
             ZEKKEN
           </h1>
           <h2 className="text-2xl pl-2 font-outline-2">Alex Henricson</h2>

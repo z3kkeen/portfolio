@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localFont from 'next/font/local'
+import localFont from "next/font/local";
 
-const rocker = localFont({ 
-  src: './fonts/New_Rocker/NewRocker-Regular.ttf',
-  variable: '--rocker'
+const rocker = localFont({
+  src: "./fonts/New_Rocker/NewRocker-Regular.ttf",
+  variable: "--rocker",
 });
-const pixelFont = localFont({ 
-  src: './fonts/Press_start_2P/PressStart2P-Regular.ttf',
-  variable: '--pixel-font'
+const pixelFont = localFont({
+  src: "./fonts/Press_start_2P/PressStart2P-Regular.ttf",
+  variable: "--pixel-font",
+});
+const roboto = localFont({
+  src: "./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf",
+  variable: "--roboto",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rocker.variable} ${pixelFont.variable} antialiased`}
+        className={`${rocker.variable} ${pixelFont.variable} ${roboto.variable} antialiased`}
       >
         {children}
       </body>

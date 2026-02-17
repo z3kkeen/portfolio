@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="w-full h-12 z-20 bg-[#262626] flex fixed justify-center items-center ">
+    <header className="w-full h-12 z-20 bg-[#262626] flex fixed justify-center items-center text-white">
       <a href="#home" className="z-10">
         HOME
       </a>
